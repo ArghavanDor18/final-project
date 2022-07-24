@@ -1,0 +1,8 @@
+/*Imported Roboto from Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/*Roboto Font for Paragraphs*/
+li, h4, h2, h1, h3, button, p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}/*# sourceMappingURL=fonts.css.map */

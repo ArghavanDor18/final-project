@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" defer="defer"></script>
+    <script src="scripts/jquery-script.js" defer="defer"></script>
+    <script src="scripts/script.js" defer="defer"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <title>COMP 2132 FINAL PROJECT</title>
+</head>
+<body>
+    <div id="div00" class="wrapper">
+        <header class="header00">
+            <img id="image-header" src="images/die01.gif">&nbsp;&nbsp;<img id="image-header" src="images/die02.gif">&nbsp;&nbsp;<img id="image-header" src="images/die03.gif">&nbsp;&nbsp;<h1>Dice Game</h1>&nbsp;&nbsp;<img id="image-header" src="images/die04.gif">&nbsp;&nbsp;<img id="image-header" src="images/die05.gif">&nbsp;&nbsp;<img id="image-header" src="images/die06.gif">&nbsp;&nbsp;
+        </header>
+       <main>
+        <div class="container">
+            <div id="div01" class="box01">
+                <h2 class="player">Arghavan</h2>
+                <div class="sections01">
+                <header>
+                    <h3>Arghavan's Dice</h3>
+                </header>
+                <section class="section01">
+                    <h4>Dice#1</h4>
+                    <h4>Dice#2</h4>
+                </section>
+            
+                <section class="section05">
+                    <div id="dice01"><img id="image01" src="" alt=""></div>
+                    <div id="dice02"><img id="image02" src="" alt=""></div>
+                </section>
+              
+                <div class="images01">
+                </div>
+                </div>
+                <div class="sections02">
+                <header>
+                    <h3 class="score">Arghavan's Score</h3>
+                </header>
+                <section class="section02">
+                    <h4>Score this Round</h4>
+                    <h4>Total Score</h4> 
+                </section>
+                <section class="content01">
+                    
+                </section>
+                <div class="paragraph-container01">
+                    <div id="score01"></div>
+                    <div id="total01"></div>
+                </div>
+                </div>
+            </div>
+            <div id="div04" class="box02">
+                <h2 class="opponent">Opponent</h2>
+                <div class="sections03">
+                <header>
+                    <h3>Opponent's Dice</h3>
+                </header>
+                <section class="section03">
+                    <h4>Dice#1</h4>
+                    <h4>Dice#2</h4>
+                </section>
+               
+                <section class="section06">
+                    <div id="dice03"><img id="image03" src="" alt=""></div>
+                    <div id="dice04"><img id="image04" src="" alt=""></div>
+                </section>
+                
+                <div class="images02">
+                </div>
+                </div>
+                <div class="sections04">
+                <header>
+                    <h3>Opponent's Score</h3>
+                </header>
+                <section class="section04">
+                    <h4>Score this Round</h4>
+                    <h4>Total Score</h4>
+                </section>
+                <section class="content02">
+                    
+                </section>
+                <div class="paragraph-container02">
+                    <div id="score02"></div>
+                    <div id="total02"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="instructions">
+            <div class="buttons"><button class="new-game" id="btn01">New Game</button>
+            <button class="roll-dice" id="btn02">Roll Dice</button></div>
+            <button id="slide-up1">Slide Up</button><button id="slide-down1">Slide Down</button>
+            <br>
+            <br>
+            <div class="horizontal-line"></div>
+            <div id="div07" class="how-to-play-container">
+                
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>To start, click the 'Roll Dice' button.</li>
+                    <li>To advance to the next round, click the 'Roll Dice' button.</li>
+                    <li>After three rounds, the game is over and the final score is calculated.</li>
+                    <li>If you want to play again, click the 'New Game' button or refresh the page.</li>
+                </ul>
+                
+            </div>
+            <button id="slide-up2">Slide Up</button><button id="slide-down2">Slide Down</button>
+            <br>
+            <br>
+            <div id="div08" class="rules-container">
+                <h3>Rules:</h3>
+                <ul>
+                    <li>Each round, you and the computer both roll a pair of dice.</li>
+                    <li>Your score for that round will be based on the sum of the dice.</li>
+                    <li>If you roll doubles(e.g. a 3 and a 3) then your score is multiplied by 2.</li>
+                    <li>Rolling a 1 will give you a score of 0 for that round.</li>
+                    <li>The player who has the most points at the end of three rounds is the winner.</li>
+                </ul>
+                
+            </div>
+           
+            <header class="header06">
+                <h1>COMP2132</h1>
+            </header>
+        </div>
+       
+       </main>
+    </div>
+
+    <div class="popup" id="pop-up">
+        <div class="overlay"></div>
+        <div class="content">
+            <div id="popup-btn"><button id="close-popup">X</button></div>
+            <h2 id="game-over"></h2>
+            <p id="pop-up-text"></p>
+            
+        </div>
+    </div>
+   
+</body>
+</html>

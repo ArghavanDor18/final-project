@@ -1,0 +1,341 @@
+$headerbackground: rgb(6, 32, 6);
+$headingbackground: orange;
+$buttonColourForGame: green;
+
+@mixin flexboxRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flexboxColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html{
+    height: 100%;
+    max-height: 100vh;
+    color: white;
+}
+
+.header00{
+    background-color: $headingbackground;
+    color: black;
+    border: 3px solid black;
+    @include flexboxRow;
+    
+}
+
+.header06{
+    background-color: $headingbackground;
+    color: black;
+    border: 3px solid black;
+    @include flexboxRow;
+}
+
+.container{
+    @include flexboxRow;
+}
+
+main{
+    color: black;
+    border: 3px solid black;
+    height: 100%;
+}
+
+.box01{
+    @include flexboxColumn;
+    text-align: center;
+    width: 50%;
+    background-color: lightseagreen;
+    border: 3px solid black;
+}
+
+.box02{
+    @include flexboxColumn;
+    text-align: center;
+    width: 50%;
+    background-color: greenyellow;
+    border: 3px solid black;
+}
+
+.sections01{
+    background-color: lightpink;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    
+}
+
+.sections02{
+    background-color: lightsteelblue;
+    padding: 10px;
+   
+    
+}
+
+.sections03{
+    background-color: lightcoral;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px;
+
+}
+
+.sections04{
+    background-color: lightskyblue;
+    padding: 10px;
+ 
+}
+
+header{
+    background-color: $headerbackground;
+    color: white;
+    padding: 5px;
+}
+
+.section01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.section02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.section03{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.section04{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.buttons{
+    @include flexboxRow;
+}
+
+.new-game{
+    background-color: $buttonColourForGame;
+    border-radius: 8px;
+    margin-right: 15px;
+    color: white;
+}
+
+.roll-dice{
+    background-color: $buttonColourForGame;
+    border-radius: 8px;
+    margin-right: 15px;
+    color: white;
+}
+
+.new-game:hover{
+    background-color: rgb(51, 232, 19);
+    color: rgb(6, 57, 6);
+}
+
+.roll-dice:hover{
+    background-color: rgb(51, 232, 19);
+    color: rgb(6, 57, 6);
+}
+
+.horizontal-line{
+    border-bottom: 3px solid black;
+}
+
+.how-to-play-container{
+    border-bottom: 3px solid black;
+    padding-left: 5px;
+}
+
+.rules-container{
+    padding-left: 5px;
+}
+
+.instructions{
+    background-color: gold;
+}
+
+.paragraph-container01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.paragraph-container02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+
+.images01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.images02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section05{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section06{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.content02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   
+}
+
+img{
+    height: 50px;
+}
+
+#score01{
+    font-size: 20px;
+  
+}
+
+#score02{
+    font-size: 20px;
+ 
+}
+
+#total01{
+    font-size: 20px;
+    
+}
+
+#total02{
+    font-size: 20px;
+    
+}
+
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup .content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup #close-popup{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#image-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#slide-up1{
+    background-color: lightslategrey;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#slide-down1{
+    background-color: lightslategrey;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#slide-up2{
+    background-color:lightslategrey;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#slide-down2{
+    background-color: lightslategrey;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#slide-up1:hover{
+    background-color: ghostwhite;
+    color: black;
+}
+
+#slide-up2:hover{
+    background-color: ghostwhite;
+    color: black;
+}
+
+#slide-down1:hover{
+    background-color: ghostwhite;
+    color: black;
+}
+
+#slide-down2:hover{
+    background-color: ghostwhite;
+    color: black;
+}
